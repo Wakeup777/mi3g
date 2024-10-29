@@ -1,0 +1,15 @@
+sndbuf 262144
+rcvbuf 262144
+dhcp-option DNS 1.1.1.1
+
+remote-cert-tls server
+cipher AES-256-CBC
+auth-nocache
+dev tun
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+verb 4
+mute 20
+explicit-exit-notify

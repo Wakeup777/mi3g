@@ -4,11 +4,15 @@
 #logger -t vpnc-script "func up done wait 80 sec"
 #viaVPN=`cat /opt/home/admin/ip_list.txt`
 
+touch  /opt/home/admin/exclude_domain.lst
+touch  /opt/home/admin/my_domain_via_Web.lst
+touch  /opt/home/admin/my_domain.lst
+
 cp /opt/home/admin/allyouneed.lst /opt/home/admin/allyouneed.lst.last
 
 echo start 
-#wget -q https://antifilter.download/list/allyouneed.lst -O /opt/home/admin/allyouneed.lst
-wget -q https://raw.githubusercontent.com/1andrevich/Re-filter-lists/refs/heads/main/ipsum.lst -O /opt/home/admin/allyouneed.lst
+wget -q https://antifilter.download/list/allyouneed.lst -O /opt/home/admin/allyouneed.lst
+#wget -q https://raw.githubusercontent.com/1andrevich/Re-filter-lists/refs/heads/main/ipsum.lst -O /opt/home/admin/allyouneed.lst
 
 
 
